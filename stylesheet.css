@@ -84,3 +84,440 @@ header {
 .home:hover {
   background-color: rgba(72, 126, 176,0.3);
 }
+
+/* Begin Bag. Asrani */
+
+.bodyteam
+{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: consolas;
+}
+
+
+.lesson-wrapper {
+  padding-bottom: 80px;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+
+.heading {
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: #5f5d60;
+  text-align: center;
+}
+
+.heading .judul {
+  font-weight: normal;
+  align-items: center;
+}
+
+
+
+
+
+.containerteam
+{
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.containerteam .box
+{
+  position: relative;
+  width: 230px;
+  height: 350px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.containerteam .box .imgBx
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  clip-path: circle(400px at center 100px);
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+.containerteam .box:hover .imgBx
+{
+  clip-path: circle(80px at center 100px);
+  transition-delay: 0s;
+}
+.containerteam .box .imgBx img
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.containerteam .box .content
+{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 55%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.containerteam .box .content h2
+{
+  margin: 0;
+  padding: 0;
+  margin-top: 10%;
+}
+.containerteam .box .content a
+{
+  text-decoration: none;
+  background: #000;
+  color: #fff;
+  padding: 5px;
+  display: inline-block;
+}
+.containerteam .box .content h2,
+.containerteam .box .content p,
+.containerteam .box .content a
+{
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(20px);
+}
+.containerteam .box:hover .content h2
+{
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s
+}
+.containerteam .box:hover .content p
+{
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.7s
+}
+.containerteam .box:hover .content a
+{
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.9s
+}
+
+
+.containerteam .box .content .social {
+  margin-top: 15px;
+
+}
+
+.containerteam .box .content .social .asosial {
+  transition: none;
+  color: #fff;
+}
+
+.containerteam .box .content .social .asosial:hover {
+  color: #18d26e;
+}
+
+.containerteam .box .content .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.tombol_web
+{
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  margin: 10px 0 10px 0;
+  color: linear-gradient(to top, #008aff, #00ffe7);
+  animation: animate 5s linear infinite;
+  font-size: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  letter-spacing: 4px;
+}
+
+.tombol_web:hover
+{
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation: animateh 5s linear infinite;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+          0 0 25px #03e9f4,
+          0 0 50px #03e9f4,
+          0 0 200px #03e9f4;
+}
+
+@keyframes animate
+{
+  0%,100%
+  {
+    filter: hue-rotate(0deg);
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+  }
+  50%
+  {
+    filter: hue-rotate(360deg);
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+  }
+}
+
+@keyframes animateh
+{
+  0%,100%
+  {
+    filter: hue-rotate(0deg);
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+  }
+  50%
+  {
+    filter: hue-rotate(360deg);
+    -webkit-box-reflect: below 1px linear-gradient(transparent,#0005);
+  }
+}
+
+.tombol_web .span_tombol_web_neon
+{
+  position: absolute;
+  display: block;
+}
+
+
+.tombol_web .span_tombol_web_neon:nth-child(1)
+{ 
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg,transparent,#03e9f4);
+  animation: animate1 1s linear infinite;
+}
+
+
+@keyframes animate1
+{
+  0%
+  {
+    left: -100%;
+  }
+  50%,100%
+  {
+    left: 100%;
+  }
+}
+.tombol_web .span_tombol_web_neon:nth-child(2)
+{ 
+  top: -100%;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#03e9f4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+
+@keyframes animate2
+{
+  0%
+  {
+    top: -100%;
+  }
+  50%,100%
+  {
+    top: 100%;
+  }
+}
+.tombol_web .span_tombol_web_neon:nth-child(3)
+{ 
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(270deg,transparent,#03e9f4);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+
+@keyframes animate3
+{
+  0%
+  {
+    right: -100%;
+  }
+  50%,100%
+  {
+    right: 100%;
+  }
+}
+.tombol_web .span_tombol_web_neon:nth-child(4)
+{ 
+  bottom: -100%;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#03e9f4);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+
+@keyframes animate4
+{
+  0%
+  {
+    bottom: -100%;
+  }
+  50%,100%
+  {
+    bottom: 100%;
+  }
+}
+  
+.title_web
+  {
+
+  color: linear-gradient(to top, #008aff, #00ffe7);
+  animation: animatet 5s linear infinite;
+  }   
+  @keyframes animatet
+  {
+    0%,100%
+    {
+      filter: hue-rotate(0deg);
+    }
+    50%
+    {
+      filter: hue-rotate(360deg);
+    }
+  }
+
+
+  .containerteam .box .content .tombol_web_read
+  {
+      position: relative;
+      display: inline-block;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin: 4px 0;
+      color: linear-gradient(to top, #008aff, #00ffe7);
+      animation: animate 5s linear infinite;
+      font-size: 18px;
+      text-decoration: none;
+      text-transform: uppercase;
+      overflow: hidden;
+      transition: 0.5s;
+      letter-spacing: 1px;
+      box-shadow: 0 0 40px rgba(0,0,0,0.5);
+      background: transparent;
+      /*-webkit-box-reflect: below 1px linear-gradient(transparent,#0005);*/
+  }
+  .containerteam .box .content .tombol_web_read .span_tombol_web_read
+  {
+      position: absolute;
+      display: block;
+      background: #086B08;
+  }
+  .containerteam .box .content .tombol_web_read .span_tombol_web_read:nth-child(1)
+  {
+      top: 0;
+      left: 0;
+      transform: translateY(0);
+      width: 5px;
+      height: 100%;
+  }
+  .containerteam .box .content .tombol_web_read:hover .span_tombol_web_read:nth-child(1)
+  {
+      transition: 0.5s;
+      transform: translateY(-100%);
+  }
+  .containerteam .box .content .tombol_web_read .span_tombol_web_read:nth-child(4)
+  {
+      top: 0;
+      right: 0;
+      transform: translateY(0);
+      width: 5px;
+      height: 100%;
+  }
+  .containerteam .box .content .tombol_web_read:hover .span_tombol_web_read:nth-child(4)
+  {
+      transition: 0.5s;
+      transform: translateY(100%);
+  }
+  .containerteam .box .content .tombol_web_read .span_tombol_web_read:nth-child(2)
+  {
+      top: 0;
+      left: 0;
+      transform: translateX(-100%);
+      width: 100%;
+      height: 5px;
+  }
+  .containerteam .box .content .tombol_web_read:hover .span_tombol_web_read:nth-child(2)
+  {
+      transform: translateX(100%);
+      transition: 0.75s;
+      transition-delay: 0.25s;
+  }
+  .containerteam .box .content .tombol_web_read .span_tombol_web_read:nth-child(5)
+  {
+      bottom: 0;
+      left: 0;
+      transform: translateX(100%);
+      width: 100%;
+      height: 5px;
+  }
+  .containerteam .box .content .tombol_web_read:hover .span_tombol_web_read:nth-child(5)
+  {
+      transform: translateX(-100%);
+      transition: 0.75s;
+      transition-delay: 0.25s;
+  }
+  .containerteam .box .content .tombol_web_read .span_tombol_web_read:nth-child(3)
+  {
+      top: 0;
+      right: 0;
+      transform: translateY(-100%);
+      width: 5px;
+      height: 100%;
+  }
+  .containerteam .box .content .tombol_web_read:hover .span_tombol_web_read:nth-child(3)
+  {
+      transition: 0.5s;
+      transition-delay: 0.5s;
+      transform: translateY(0);
+  }
+  .containerteam .box .content .tombol_web_read .span_tombol_web_read:nth-child(6)
+  {
+      top: 0;
+      left: 0;
+      transform: translateY(100%);
+      width: 5px;
+      height: 100%;
+  }
+  .containerteam .box .content .tombol_web_read:hover .span_tombol_web_read:nth-child(6)
+  {
+      transition: 0.5s;
+      transition-delay: 0.5s;
+      transform: translateY(0);
+  }    
+/* End Bag. Asrani */
