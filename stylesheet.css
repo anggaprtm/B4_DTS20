@@ -1,1 +1,86 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  background-image: url(https://raw.githubusercontent.com/anggaprtm/B4_DTS20.github.io/master/markus-spiske-qjnAnF0jIGk-unsplash.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  font-family:"Bebas Neue";
+  opacity: 0.8;
+  font-size: 70px;
+  letter-spacing: 2px;
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(25, 42, 86, 0.5);
+  position :fixed;
+  top: 0;
+  z-index: 10;
+  margin-top: 20px;
+}
+
+.logo {
+  width: 80%;
+  margin-top: 3px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  font-family:"Minion Pro";
+  float: right;
+  margin-right: -25px;
+  font-size: 20px
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: white;
+  display: block;
+  float: left;
+  transition: all 0.5s;
+}
+
+.menu:hover {
+  background-color: rgba(64, 115, 158, 0.3);
+}
+
+.home {
+  background-color: rgba(72, 126, 176,0.5);
+}
+
+.home:hover {
+  background-color: rgba(72, 126, 176,0.3);
+}
