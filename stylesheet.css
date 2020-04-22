@@ -85,6 +85,123 @@ header {
   background-color: rgba(72, 126, 176,0.3);
 }
 
+
+/*Bagian Bagas untuk selamat datang dan card*/
+.lesson-wrapper1 {            
+padding-bottom: 80px;            
+padding-left: 5%;  
+background-color: #f7f7f7;
+padding-right: 5%;            
+text-align: center;            
+}            
+
+.heading1 {            
+ padding-top: 80px;            
+ padding-bottom: 50px;            
+ color: #5f5d60;            
+ }            
+
+.heading1 h2 {            
+ font-weight: normal;            
+}            
+
+.container1
+{
+  margin: 0 auto;
+  max-width: 1000px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.container1 .card
+{
+  position: relative;
+  width: 250px;
+  height: 300px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;  
+}
+
+.container1:hover .card
+{
+  filter: blur(5px);
+  transform: scale(.7);
+}
+
+.container1 .card:hover
+{
+  filter: blur(0px);
+  transform: scale(1);
+}
+
+
+.container1 .card:before
+{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 1;
+  transition: 0.5s; 
+}
+
+.container1 .card:hover:before
+{
+  background: #000;
+  transform: scaleY(1.15);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+}
+
+.container1 .card .content
+{
+  text-align: center;
+  z-index: 2;
+  padding: 0 20px;
+  transition: 0.5s;
+}
+
+.container1 .card:hover .content
+{
+  color: #fff;
+}
+
+.container1 .card .content h2
+{
+  font-size: 3em;
+}
+
+.container1 .card .content p
+{
+  font-size: 0.9em;
+  text-align: center;
+}
+
+.container1 .card .content a
+{
+  display: inline-block;
+  margin-top: 15px;
+  padding: 5px 10px;
+  background: #262626;
+  color: #fff;
+  text-decoration: none;  
+}
+
+.container1 .card:hover .content a
+{
+  background: #2196f3;
+}
+
+
+
+
+
 /* Begin Bag. Asrani */
 
 .bodyteam
@@ -120,10 +237,6 @@ header {
   font-weight: normal;
   align-items: center;
 }
-
-
-
-
 
 .containerteam
 {
