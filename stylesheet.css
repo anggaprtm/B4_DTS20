@@ -299,6 +299,15 @@ text-align: center;
   margin-top: 10%;
   font-size: 6px;
 }
+
+.containerteam .box .content font
+{
+  margin: 0;
+  padding: 0;
+  margin-top: 10%;
+  font-size: 6px;
+}
+
 .containerteam .box .content a
 {
   text-decoration: none;
@@ -309,7 +318,8 @@ text-align: center;
 }
 .containerteam .box .content h2,
 .containerteam .box .content p,
-.containerteam .box .content a
+.containerteam .box .content a,
+.containerteam .box .content font
 {
   opacity: 0;
   transition: 0.5s;
