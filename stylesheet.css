@@ -634,3 +634,21 @@ text-align: center;
       transform: translateY(0);
   }    
 /* End Bag. Asrani */
+
+/* Start Bag. Arfin */
+  .hero2 h1 {
+  font-family: "Poppins";
+  font-weight: 700;
+  color: #2f281e;
+}
+.hero2 h5 {
+  font-family: "Poppins";
+  font-weight: 700;
+  color: #2f281e;
+}
+.hero2 p {
+  font-family: "Montserrat";
+  font-weight: 300;
+  color: #2f281e;
+}
+/* End Bag. Arfin */
