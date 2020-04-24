@@ -795,30 +795,33 @@ text-align: center;
   font-size: 22px;
 }
 
-.footer-copyright {
-  height: 55px;
-  background-color: #262626;
-  color: grey;
-  padding: 20px 20px;
 
-}
+  /*Begin Reg Edit Bag. Asrani*/
+  .footer-copyright {
+    height: 55px;
+    background-color: #262626;
+    color: grey;
+    padding: 20px 20px;
 
-.text-1 {
-  float: left;
-  margin: 0 auto;
-}
+  }
 
-.text-1 h4 {
-  font-size: 14px;
-}
+  .text-1 {
+    float: left;
+    margin: 0 auto;
+  }
 
-.text-2 {
-  float: right;
-  margin: 0 auto;
-}
+  .text-1 .teks-kiri {
+    font-size: 14px;
+  }
 
-.text-2 h4 {
-  font-size: 14px;
-}
+  .text-2 {
+    float: right;
+    margin: 0 auto;
+  }
+
+  .text-2 .teks-kanan {
+    font-size: 14px;
+  }
+  /*End Reg Edit Bag. Asrani*/
 
 /* End Bag.Andi */
