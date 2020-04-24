@@ -56,6 +56,35 @@
   }
   /* End Footer bag. Andi */
 
+    /*Begin Bag. Asrani*/
+    .footer-copyright {
+      height: 70px;
+      background-color: #262626;
+      color: grey;
+      padding: 20px 20px;
+
+    }
+
+    .text-1 {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+    .text-1 .teks-kiri {
+      font-size: 14px;
+    }
+
+    .text-2 {
+      float: none;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .text-2 .teks-kanan {
+      font-size: 14px;
+    }
+    /*End Bag. Asrani*/
 }
 
 /* Untuk Smartphone */
@@ -124,4 +153,35 @@
       margin-top: -10px;
   }
   /* End Footer bag. Andi */
+  
+  
+    /*Begin Bag. Asrani*/
+    .footer-copyright {
+      height: 70px;
+      background-color: #262626;
+      color: grey;
+      padding: 20px 20px;
+
+    }
+
+    .text-1 {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+    .text-1 .teks-kiri {
+      font-size: 14px;
+    }
+
+    .text-2 {
+      float: none;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .text-2 .teks-kanan {
+      font-size: 14px;
+    }
+    /*End Bag. Asrani*/
 }
