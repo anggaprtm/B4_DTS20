@@ -14,7 +14,7 @@ a {
   clear: left;
 }
 
-.menu-icon {
+.header-right span {
   display: none;
 }
 
@@ -27,7 +27,7 @@ a {
 
 .top-wrapper {
   padding: 180px 0 100px 0;
-  background-image: url(https://raw.githubusercontent.com/anggaprtm/B4_DTS20.github.io/master/markus-spiske-qjnAnF0jIGk-unsplash.jpg);
+  background-image: url(markus-spiske-qjnAnF0jIGk-unsplash.jpg);
   background-size: cover;
   color: white;
   text-align: center;
@@ -45,11 +45,10 @@ a {
 header {
   height: 65px;
   width: 100%;
-  background-color: rgba(25, 42, 86, 0.5);
-  position :fixed;
+  background-color: rgba(59, 58, 56, 0.9);
+  position : fixed;
   top: 0;
   z-index: 10;
-  margin-top: 20px;
 }
 
 .logo {
@@ -77,37 +76,40 @@ header {
   transition: all 0.5s;
 }
 
+.header-right a:hover {
+  color:white;
+}
 .menu:hover {
-  background-color: rgba(64, 115, 158, 0.3);
+  background-color: rgba(127, 140, 141, 0.3);
 }
 
 .home {
-  background-color: rgba(72, 126, 176,0.5);
+  background-color: rgba(127, 140, 141,0.4);
 }
 
 .home:hover {
-  background-color: rgba(72, 126, 176,0.3);
+  background-color: rgba(127, 140, 141,0.3);
 }
 
 
 /*Bagian Bagas untuk selamat datang dan card*/
-.lesson-wrapper1 {            
-padding-bottom: 80px;            
-padding-left: 5%;  
+.lesson-wrapper1 {
+padding-bottom: 80px;
+padding-left: 5%;
 background-color: #f7f7f7;
-padding-right: 5%;            
-text-align: center;            
-}            
+padding-right: 5%;
+text-align: center;
+}
 
-.heading1 {            
- padding-top: 80px;            
- padding-bottom: 50px;            
- color: #5f5d60;            
- }            
+.heading1 {
+ padding-top: 80px;
+ padding-bottom: 50px;
+ color: #5f5d60;
+ }
 
-.heading1 h2 {            
- font-weight: normal;            
-}            
+.heading1 h2 {
+ font-weight: normal;
+}
 
 .container1
 {
@@ -129,7 +131,7 @@ text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.5s;  
+  transition: 0.5s;
 }
 
 .container1:hover .card
@@ -153,7 +155,7 @@ text-align: center;
   height: 100%;
   background: #fff;
   z-index: 1;
-  transition: 0.5s; 
+  transition: 0.5s;
 }
 
 .container1 .card:hover:before
@@ -178,7 +180,7 @@ text-align: center;
 
 .container1 .card .content h2
 {
-  font-size: 3em;
+  font-size: 14px;
 }
 
 .container1 .card .content p
@@ -194,17 +196,13 @@ text-align: center;
   padding: 5px 10px;
   background: #262626;
   color: #fff;
-  text-decoration: none;  
+  text-decoration: none;
 }
 
 .container1 .card:hover .content a
 {
   background: #2196f3;
 }
-
-
-
-
 
 /* Begin Bag. Asrani */
 
@@ -431,7 +429,7 @@ text-align: center;
 
 
 .tombol_web .span_tombol_web_neon:nth-child(1)
-{ 
+{
   top: 0;
   left: -100%;
   width: 100%;
@@ -453,7 +451,7 @@ text-align: center;
   }
 }
 .tombol_web .span_tombol_web_neon:nth-child(2)
-{ 
+{
   top: -100%;
   right: 0;
   width: 5px;
@@ -476,7 +474,7 @@ text-align: center;
   }
 }
 .tombol_web .span_tombol_web_neon:nth-child(3)
-{ 
+{
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -499,7 +497,7 @@ text-align: center;
   }
 }
 .tombol_web .span_tombol_web_neon:nth-child(4)
-{ 
+{
   bottom: -100%;
   left: 0;
   width: 5px;
@@ -521,13 +519,13 @@ text-align: center;
     bottom: 100%;
   }
 }
-  
+
 .title_web
   {
 
   color: linear-gradient(to top, #008aff, #00ffe7);
   animation: animatet 5s linear infinite;
-  }   
+  }
   @keyframes animatet
   {
     0%,100%
@@ -647,11 +645,11 @@ text-align: center;
       transition: 0.5s;
       transition-delay: 0.5s;
       transform: translateY(0);
-  }    
+  }
 /* End Bag. Asrani */
 
 /* Start Bag. Arfin */
-  .hero2 h1 {
+.hero2 h1 {
   font-family: "Poppins";
   font-weight: 700;
   color: #2f281e;
@@ -667,3 +665,160 @@ text-align: center;
   color: #2f281e;
 }
 /* End Bag. Arfin */
+
+/* Start Bag. Andi */
+
+.footer-container {
+  height: 260px;
+  width: auto;
+  padding: 20px 20px 45px;
+  background-color: #2f3640;
+  background-image: url(engin1.png);
+  background-size: cover;
+  color: #f5f6fa;
+  position: relative;
+}
+
+.footer-logo {
+  float: left;
+  text-align: center;
+  opacity: 0.7;
+  box-sizing: border-box;
+}
+
+.footer-contact {
+  float: right;
+  margin-top: 20px;
+  margin-right: 20%;
+  box-sizing: border-box;
+}
+
+.footer-contact h3 {
+  font-size: 20px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f5f6fa;
+  opacity: 0.7;
+}
+
+
+.footer-icon {
+  width: 25%;
+  margin-top: -17px;
+  float: left;
+  padding: 10px 10px 0 0;
+  font-size: 34px;
+  opacity: 0.6;
+  transition: all 0.5s;
+  box-sizing: border-box;
+}
+
+.footer-icon:hover {
+  opacity: 1;
+  font-size: 40px;
+  color: #fff;
+}
+
+.footer-icon a {
+  color: #fff;
+}
+
+.footer-icon a:hover {
+  color: #fff
+}
+
+.btn-tombol {
+  box-sizing: border-box;
+  float: right;
+  position: absolute;
+  top: 45%;
+  right: 24%;
+}
+
+.tombol {
+  width: 120px;
+  margin-top: 5px;
+  padding: 5px 24px;
+  color: #fff;
+  display: inline-block;
+  opacity: 0.8;
+  background-color: #353b48;
+  margin: 5px 0;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 7px grey;
+  font-size: 16px;
+}
+
+.tombol:hover {
+  opacity: 1;
+}
+
+.btn-tombol a:hover {
+  color: #fff;
+}
+
+.tombol:active {
+  box-shadow: none;
+  position: relative;
+  top: 7px;
+}
+
+.footer-tim {
+  float: left;
+  margin: 40px 0 10px 30px;
+}
+
+.project-tim {
+  font-size: 20px;
+  padding-top: 18px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #f5f6fa;
+  opacity: 0.7;
+}
+
+.footer-tim ul {
+  margin-top: 10px 0 0 0;
+  padding: 0;
+}
+
+.footer-tim li {
+  font-size: 18px;
+  margin: 0 20px 5px 0;
+  opacity: 0.7;
+  transition: all 0.3s;
+  list-style: none;
+}
+
+.footer-tim li:hover {
+  opacity: 1;
+  border-bottom: 1px solid #f5f6fa;
+  font-size: 22px;
+}
+
+.footer-copyright {
+  height: 55px;
+  background-color: #262626;
+  color: grey;
+  padding: 20px 20px;
+
+}
+
+.text-1 {
+  float: left;
+  margin: 0 auto;
+}
+
+.text-1 h4 {
+  font-size: 14px;
+}
+
+.text-2 {
+  float: right;
+  margin: 0 auto;
+}
+
+.text-2 h4 {
+  font-size: 14px;
+}
+
+/* End Bag.Andi */
