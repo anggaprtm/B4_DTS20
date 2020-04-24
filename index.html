@@ -418,13 +418,95 @@
       </div>
     </footer>
     <div class="footer-copyright">
+      <!-- Begin Reg Edit Bag. Asrani -->
       <div class="text-1">
-        <h4>Copyright © 2020 - Tim B4</h4>
+        <h4 class="teks-kiri">Copyright © 2020 - Tim B4</h4>
       </div>
       <div class="text-2">
-        <h4>DTS-2020</h4>
+        <h4 class="teks-kanan">
+          <b>DTS-2020</b> <i><span id="time"></span></i>
+        </h4>
       </div>
+      <!-- End Reg Edit Bag. Asrani -->
     </div>
       <!-- End Bag. Andi -->
   </body>
+
+  <!-- Begin Bag. Asrani -->
+  <script type="text/javascript">
+
+    function checkTime(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+
+    function startTime() {
+
+        var tanggallengkap = new String();
+        var namahari = ("Minggu Senin Selasa Rabu Kamis Jumat Sabtu");
+        namahari = namahari.split(" ");
+        var namabulan = ("Januari Februari Maret April Mei Juni Juli Agustus September Oktober November Desember");
+        namabulan = namabulan.split(" ");
+        var tgl = new Date();
+        var hari = tgl.getDay();
+        var tanggal = tgl.getDate();
+        var bulan = tgl.getMonth();
+        var tahun = tgl.getFullYear();
+        tanggallengkap = namahari[hari] + ", " +tanggal + " " + namabulan[bulan] + " " + tahun;
+
+
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        if(h >= 0 && h<1){
+          var sel = "Selamat Tengah Malam...!!"
+        }else if(h >= 1 && h<=2){
+          var sel = "Selamat Dini Hari...!!"
+        }else if(h > 2 && h<=4){
+          var sel = "Selamat Subuh...!!"
+        }else if(h > 4 && h<=6){
+          var sel = "Selamat Fajar...!!"
+        }else if(h > 6 && h<=7){
+          var sel = "Selamat Terbit Matahari...!!"
+        }else if(h > 7 && h<=9){
+          var sel = "Selamat Pagi...!!"
+        }else if(h > 9 && h<=10){
+          var sel = "Selamat Pagi Menjelang Siang...!!"
+        }else if(h > 10 && h<=11){
+          var sel = "Selamat Siang...!!"
+        }else if(h > 11 && h<=12){
+          var sel = "Selamat Tengah Hari...!!"
+        }else if(h > 12 && h<=14){
+          var sel = "Selamat Siang Hari...!!"
+        }else if(h > 14 && h<=16){
+          var sel = "Selamat Siang Menjelang Sore...!!"
+        }else if(h > 16 && h<=17){
+          var sel = "Selamat Sore...!!"
+        }else if(h > 17 && h<=18){
+          var sel = "Selamat Senja...!!"
+        }else if(h > 18 && h<=19){
+          var sel = "Selamat Petang...!!"
+        }else if(h > 19 && h<=20){
+          var sel = "Selamat Malam...!!"
+        }else if(h > 20 && h<=22){
+          var sel = "Selamat Naik Malam...!!"
+        }else if(h > 22 && h<=24){
+          var sel =  "Selamat Larut Malam...!!"
+        }else{
+          var sel = "Selamat Hari Hari...!!"
+        }
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('time').innerHTML = tanggallengkap + ", " + h + ":" + m + ":" + s + ", " + sel;
+        t = setTimeout(function () {
+            startTime()
+        }, 500);
+    }
+    startTime();
+
+  </script> 
+  <!-- End Bag. Asrani -->
 </html>
