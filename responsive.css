@@ -58,7 +58,7 @@
 
     /*Begin Bag. Asrani*/
     .footer-copyright {
-      height: 70px;
+      height: 80px;
       background-color: #262626;
       color: grey;
       padding: 20px 20px;
@@ -157,7 +157,7 @@
   
     /*Begin Bag. Asrani*/
     .footer-copyright {
-      height: 70px;
+      height: 80px;
       background-color: #262626;
       color: grey;
       padding: 20px 20px;
@@ -185,3 +185,104 @@
     }
     /*End Bag. Asrani*/
 }
+
+
+/* Untuk Smartphone */
+@media all and (max-width: 600px) {
+
+  footer {
+    text-align: center;
+  }
+  /* CSS Nav Bar */
+  .header-right a {
+    display:none;
+  }
+  .header-right span {
+    float: right;
+    color: white;
+    padding: 5px 10px 0px 0px;
+    margin-right: 25px;
+    margin-top: 15px;
+    display: inline-block;
+  }
+.logo {
+  width: 60%;
+  margin-top: 13px;
+}
+  /* CSS Menu Icon */
+  .top-wrapper h1 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .top-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .heading1 h1 {
+    font-size: 24px;
+  }
+
+  .heading1 h2 {
+    font-size: 22px;
+  }
+  /* Start Footer bag. Andi */
+  .footer-container {
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+  }
+
+  .footer-logo {
+      width: 90%;
+      margin-top: 10px;
+  }
+
+  .footer-contact {
+      margin-top: 10px;
+      margin-right: 10%;
+
+  }
+
+  .btn-tombol {
+      top: 60%;
+      right: 18%;
+  }
+
+  .footer-tim {
+      margin-top: -10px;
+  }
+  /* End Footer bag. Andi */
+  
+  
+    /*Begin Bag. Asrani*/
+    .footer-copyright {
+      height: 80px;
+      background-color: #262626;
+      color: grey;
+      padding: 20px 20px;
+
+    }
+
+    .text-1 {
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+    }
+
+    .text-1 .teks-kiri {
+      font-size: 14px;
+    }
+
+    .text-2 {
+      float: none;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .text-2 .teks-kanan {
+      font-size: 14px;
+    }
+    /*End Bag. Asrani*/
+}
+
